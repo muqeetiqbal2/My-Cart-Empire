@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/imgs/myCartEmpire.png" alt="Ecommerce Store Logo" />
+      </div>
+      <div class="search-items">
+        <div class="category-dropdown">
+          <select>
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+            <option value="category3">Category 3</option>
+          </select>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search for thousends of products" />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+      <div class="support-number">
+        <span>For Support?</span>
+        <p>+92-306-7465-933</p>
+      </div>
+      <div class="header-icons">
+        <div class="whishlist-icon">
+          <a href="wishlist.html">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="profile-icon">
+          <a href="profile.html">
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="cart-items-price">
+        Your Cart: Rs. 100.00
+      </div>
+    </header>
+
+    <div class="headline-bar">
+      <p>Welcome to My Cart Empire Online Store!</p>
+    </div>
+
+    <nav>
+      <ul>
+        <select class="nav-selection">
+          <option value="category1">Shop By Categorirs</option>
+          <option value="category2">Category 2</option>
+          <option value="category3">Category 3</option>
+        </select>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="">Women</a></li>
+        <li><a href="">Men</a></li>
+        <li><a href="">Kids</a></li>
+        <li><a href="">Accessories</a></li>
+        <li><a href="">Electronics</a></li>
+        <li><a href="">Sale</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="main">
+      <div class="delivery">
+        <img src="/imgs/delivery/free.png" alt="" />
+      </div>
+      <div class="categories">
+        <img src="/imgs/main-categories/women.png" alt="" />
+        <img src="/imgs/main-categories/men.png" alt="" />
+      </div>
+    </section>
+
+    <section class="category">
+      <h1>Categories</h1>
+      <div class="category-cards">
+        <div class="category-card">
+          <i class="fas fa-female"></i>
+          <!-- Icon for Women Products -->
+          <h2>Women Products</h2>
+        </div>
+        <div class="category-card">
+          <i class="fas fa-male"></i>
+          <!-- Icon for Men Products -->
+          <h2>Men Products</h2>
+        </div>
+        <div class="category-card">
+          <i class="fas fa-child"></i>
+          <!-- Icon for Kids Products -->
+          <h2>Kids Products</h2>
+        </div>
+        <div class="category-card">
+          <i class="fas fa-glasses"></i>
+          <!-- Icon for Accessories Products -->
+          <h2>Accessories Products</h2>
+        </div>
+        <div class="category-card">
+          <i class="fas fa-laptop"></i>
+          <!-- Icon for Electronics Products -->
+          <h2>Electronics Products</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="product-slider">
+      <h1>Trending Products</h1>
+      <!-- <div class="slider-navigation">
+        <button class="prev-btn" onclick="prevSlide()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn" onclick="nextSlide()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/imgs/delivery/fast.png" alt="Product Image" />
+        </div>
+        <div class="product-details">
+          <h2>Sample Product</h2>
+          <p>Description line for the product goes here.</p>
+        </div>
+        <div class="quantity-controls">
+          <span class="quantity-label">Quantity:</span>
+          <input class="quantity-input" type="number" value="1" min="1" />
+        </div>
+        <div class="product-actions">
+          <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+          <span class="icon"><i class="fas fa-heart"></i></span>
+        </div>
+        <p><span>Price:</span> $19.99</p>
+      </div>
+    </section> -->
+
+    <section class="products">
+      <div class="products-head">
+        <h2>Trending Products</h2>
+        <a href="">View All Products →</a>
+      </div>
+      <div class="slider" id="slider">
+        <div class="slide" id="slide">
+          <img class="item" src="/imgs/delivery/fast.png" />
+          <img class="item" src="/imgs/delivery/free.png" />
+          <img class="item" src="/imgs/delivery/fast.png" />
+          <img class="item" src="/imgs/delivery/free.png" />
+          <img class="item" src="/imgs/delivery/fast.png" />
+          <img class="item" src="/imgs/delivery/free.png" />
+          <img class="item" src="/imgs/delivery/fast.png" />
+          <img class="item" src="/imgs/delivery/free.png" />
+          <img class="item" src="/imgs/delivery/fast.png" />
+          <img class="item" src="/imgs/delivery/free.png" />
+          <img class="item" src="/imgs/delivery/fast.png" />
+          <img class="item" src="/imgs/delivery/free.png" />
+        </div>
+        <button class="ctrl-btn pro-prev">Prev</button>
+        <button class="ctrl-btn pro-next">Next</button>
+      </div>
+    </section>
+
+    <div class="products">
+      <div class="products-head">
+        <h2>New Products</h2>
+        <a href="">View All Products →</a>
+      </div>
+      <div class="row">
+        <div class="container page-wrapper">
+          <div class="page-inner">
+            <div class="row">
+              <div class="el-wrapper">
+                <div class="box-up">
+                  <img
+                    class="img"
+                    src="https://rb.gy/b2xju"
+                    alt=""
+                  />
+                  <div class="img-info">
+                    <div class="info-inner">
+                      <span class="p-name">Sample</span>
+                      <span class="p-company">Brand</span>
+                    </div>
+                    <div class="a-size">
+                      Available: <span class="size">Yes</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-down">
+                  <div class="h-bg">
+                    <div class="h-bg-inner"></div>
+                  </div>
+
+                  <a class="cart" href="#">
+                    <span class="price">Rs. 1200</span>
+                    <span class="add-to-cart">
+                      <span class="txt">Add in cart</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container page-wrapper">
+          <div class="page-inner">
+            <div class="row">
+              <div class="el-wrapper">
+                <div class="box-up">
+                  <img
+                    class="img"
+                    src="https://rb.gy/b2xju"
+                    alt=""
+                  />
+                  <div class="img-info">
+                    <div class="info-inner">
+                      <span class="p-name">Sample</span>
+                      <span class="p-company">Brand</span>
+                    </div>
+                    <div class="a-size">
+                      Available: <span class="size">Yes</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-down">
+                  <div class="h-bg">
+                    <div class="h-bg-inner"></div>
+                  </div>
+
+                  <a class="cart" href="#">
+                    <span class="price">Rs. 1200</span>
+                    <span class="add-to-cart">
+                      <span class="txt">Add in cart</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container page-wrapper">
+          <div class="page-inner">
+            <div class="row">
+              <div class="el-wrapper">
+                <div class="box-up">
+                  <img
+                    class="img"
+                    src="https://rb.gy/b2xju"
+                    alt=""
+                  />
+                  <div class="img-info">
+                    <div class="info-inner">
+                      <span class="p-name">Sample</span>
+                      <span class="p-company">Brand</span>
+                    </div>
+                    <div class="a-size">
+                      Available: <span class="size">Yes</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-down">
+                  <div class="h-bg">
+                    <div class="h-bg-inner"></div>
+                  </div>
+
+                  <a class="cart" href="#">
+                    <span class="price">Rs. 1200</span>
+                    <span class="add-to-cart">
+                      <span class="txt">Add in cart</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container page-wrapper">
+          <div class="page-inner">
+            <div class="row">
+              <div class="el-wrapper">
+                <div class="box-up">
+                  <img
+                    class="img"
+                    src="https://rb.gy/b2xju"
+                    alt=""
+                  />
+                  <div class="img-info">
+                    <div class="info-inner">
+                      <span class="p-name">Sample</span>
+                      <span class="p-company">Brand</span>
+                    </div>
+                    <div class="a-size">
+                      Available: <span class="size">Yes</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-down">
+                  <div class="h-bg">
+                    <div class="h-bg-inner"></div>
+                  </div>
+
+                  <a class="cart" href="#">
+                    <span class="price">Rs. 1200</span>
+                    <span class="add-to-cart">
+                      <span class="txt">Add in cart</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container page-wrapper">
+          <div class="page-inner">
+            <div class="row">
+              <div class="el-wrapper">
+                <div class="box-up">
+                  <img
+                    class="img"
+                    src="https://rb.gy/b2xju"
+                    alt=""
+                  />
+                  <div class="img-info">
+                    <div class="info-inner">
+                      <span class="p-name">Sample</span>
+                      <span class="p-company">Brand</span>
+                    </div>
+                    <div class="a-size">
+                      Available: <span class="size">Yes</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-down">
+                  <div class="h-bg">
+                    <div class="h-bg-inner"></div>
+                  </div>
+
+                  <a class="cart" href="#">
+                    <span class="price">Rs. 1200</span>
+                    <span class="add-to-cart">
+                      <span class="txt">Add in cart</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container page-wrapper">
+          <div class="page-inner">
+            <div class="row">
+              <div class="el-wrapper">
+                <div class="box-up">
+                  <img
+                    class="img"
+                    src="https://rb.gy/b2xju"
+                    alt=""
+                  />
+                  <div class="img-info">
+                    <div class="info-inner">
+                      <span class="p-name">Sample</span>
+                      <span class="p-company">Brand</span>
+                    </div>
+                    <div class="a-size">
+                      Available: <span class="size">Yes</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-down">
+                  <div class="h-bg">
+                    <div class="h-bg-inner"></div>
+                  </div>
+
+                  <a class="cart" href="#">
+                    <span class="price">Rs. 1200</span>
+                    <span class="add-to-cart">
+                      <span class="txt">Add in cart</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container page-wrapper">
+          <div class="page-inner">
+            <div class="row">
+              <div class="el-wrapper">
+                <div class="box-up">
+                  <img
+                    class="img"
+                    src="https://rb.gy/b2xju"
+                    alt=""
+                  />
+                  <div class="img-info">
+                    <div class="info-inner">
+                      <span class="p-name">Sample</span>
+                      <span class="p-company">Brand</span>
+                    </div>
+                    <div class="a-size">
+                      Available: <span class="size">Yes</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-down">
+                  <div class="h-bg">
+                    <div class="h-bg-inner"></div>
+                  </div>
+
+                  <a class="cart" href="#">
+                    <span class="price">Rs. 1200</span>
+                    <span class="add-to-cart">
+                      <span class="txt">Add in cart</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container page-wrapper">
+          <div class="page-inner">
+            <div class="row">
+              <div class="el-wrapper">
+                <div class="box-up">
+                  <img
+                    class="img"
+                    src="https://rb.gy/b2xju"
+                    alt=""
+                  />
+                  <div class="img-info">
+                    <div class="info-inner">
+                      <span class="p-name">Sample</span>
+                      <span class="p-company">Brand</span>
+                    </div>
+                    <div class="a-size">
+                      Available: <span class="size">Yes</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-down">
+                  <div class="h-bg">
+                    <div class="h-bg-inner"></div>
+                  </div>
+
+                  <a class="cart" href="#">
+                    <span class="price">Rs. 1200</span>
+                    <span class="add-to-cart">
+                      <span class="txt">Add in cart</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
